@@ -25,9 +25,20 @@ Create Taskpipelines controller
 rails g controller Taskpipelines index create update destroy
 ~~~
 
+Migrate 
 ~~~
 rails db:migrate RAILS_ENV=development
 ~~~
+
+config/routes.rb
+~~~
+Rails.application.routes.draw do
+  scope '/api/version1' do
+    resources :taskpipelines
+  end
+end
+~~~
+
 
 ### taskpipelines_controller.rb
 ~~~
@@ -67,4 +78,11 @@ end
 ~~~
 Taskpipeline.create(title: "Gigafactory, Nevada", description: "Gigafactory in Nevada", completed: true)
 Taskpipeline.create(title: "Gigafactory, Berlin", description: "Gigafactory in Berlin", completed: false)
+~~~
+
+Seed and run
+~~~
+bin/rails db:seed
+
+bin/rails server
 ~~~
