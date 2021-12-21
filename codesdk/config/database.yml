@@ -81,6 +81,6 @@ test:
 #
 production:
   <<: *default
-  database: codesdk_production
-  username: codesdk
-  password: <%= ENV["CODESDK_DATABASE_PASSWORD"] %>
+  database: <%= ENV["DB_NAME"] %>
+  username: <%= ENV["DB_USERNAMAE"] %>
+  password: <%= ENV["DB_PASSWORD"] %>
