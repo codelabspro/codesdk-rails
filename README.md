@@ -3,7 +3,15 @@
 
 ## Steps
 
-Add to Gemfile 
+Make the following changes to database.yml 
+~~~
+dev: &dev
+  adapter: sqlite3
+
+development:
+  <<: *dev
+  database: codesdk_development
+~~~
 
 Add rack-cors gem to Gemfile
 ~~~
@@ -86,3 +94,5 @@ bin/rails db:seed
 
 bin/rails server
 ~~~
+
+https://giters.com/ruby/reline/issues/384
