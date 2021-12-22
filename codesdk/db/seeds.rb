@@ -5,3 +5,5 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
+Taskpipeline.create(title: "Gigafactory, Nevada", description: "Gigafactory in Nevada", completed: true)
+Taskpipeline.create(title: "Gigafactory, Berlin", description: "Gigafactory in Berlin", completed: false)

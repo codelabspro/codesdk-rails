@@ -1,0 +1,2 @@
+class Taskpipeline < ApplicationRecord
+end
