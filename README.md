@@ -96,3 +96,11 @@ bin/rails server
 ~~~
 
 https://giters.com/ruby/reline/issues/384
+
+
+
+## Video
+
+https://youtu.be/XDYJi7uWkIc
+
+https://youtu.be/0D-BYBSNm5k
